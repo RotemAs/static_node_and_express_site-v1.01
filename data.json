@@ -7,5 +7,69 @@
         "live_link": "https://rotemas.github.io/RandomQuoteGenerator/",
         "github_link":"https://github.com/RotemAs/RandomQuoteGenerator", 
         "image_urls": ["/static/assets/img/prodj01-nn.png"]
-    }   
+    },
+    {
+        "id": 1,
+        "project_name": "Data Pagination and Filtering",
+        "description": "Team Treehouse Full Stack Development Project 2!",
+        "technologies": ["JavaScript"],
+        "live_link": "https://rotemas.github.io/Data_Pagination_Filtering/",
+        "github_link":"https://github.com/RotemAs/Data_Pagination_Filtering", 
+        "image_urls": ["/static/assets/img/prodj02-nn.png"]
+    },      
+    {
+        "id": 2,
+        "project_name": "Ineractive Forms",
+        "description": "Treehouse Tech degree Project 3 ",
+        "technologies": ["JavaScript"],
+        "live_link": "https://rotemas.github.io/interactive-form-v3_final/",
+        "github_link":"https://github.com/RotemAs/interactive-form-v3_final", 
+        "image_urls": ["/static/assets/img/proj03-nn.png"]
+    },
+    {
+        "id": 3,
+        "project_name": "OOP Game Show App",
+        "description": "Guess the phrase! ",
+        "technologies": ["JavaScript"],
+        "live_link": "https://rotemas.github.io/oop_game-v2.1/",
+        "github_link":"https://github.com/RotemAs/oop_game-v2.1", 
+        "image_urls": ["/static/assets/img/proj04-nn.png"]
+    },
+    {
+        "id": 4,
+        "project_name": "Public API Requests",
+        "description": "Public API Requests - ",
+        "technologies": ["JavaScript"],
+        "live_link": "https://rotemas.github.io/public_api_requests/",
+        "github_link":"https://github.com/RotemAs/public_api_requests", 
+        "image_urls": ["/static/assets/img/proj05-nn.png"]
+    },
+    {
+        "id": 5,
+        "project_name": "Mine-Sweeper",
+        "description": "Mine-Sweeper with 3 lavels and hints and more Surprises ",
+        "technologies": ["JavaScript"],
+        "live_link": "https://rotemas.github.io/Mine-Sweeper/",
+        "github_link":"https://github.com/RotemAs/Mine-Sweeper", 
+        "image_urls": ["/static/assets/img/mineSwiper.png"]
+    },
+    {
+        "id": 6,
+        "project_name": "Ultimate Meme Generator",
+        "description": "Ultimate Meme Generator",
+        "technologies": ["JavaScript"],
+        "live_link": "https://rotemas.github.io/MemeGem1.3",
+        "github_link":"https://github.com/RotemAs/MemeGem1.3", 
+        "image_urls": ["/static/assets/img/memeGen.png"]
+    },
+    {
+        "id": 7,
+        "project_name": "pacman",
+        "description": "pacman",
+        "technologies": ["JavaScript"],
+        "live_link": "https://rotemas.github.io/pacman/",
+        "github_link":"https://github.com/RotemAs/pacman", 
+        "image_urls": ["/static/assets/img/pacman.png"]
+    }
+                            
 ]}
