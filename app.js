@@ -46,10 +46,10 @@ app.use((req, res, next) => {
  */
 app.use((err, req, res) => {
   err.message = err.message || "There was a server error!";
-  res.status(err.status || 500);
+  res.status(500);
   res.render('error', { err });
-  console.log(`You have hit a ${err.status} error!`);
-  res.send(`Error Code: ${res.status} : ${err.message}`);
+  // console.log(`You have hit a ${err.status} error!`);
+  // res.send(`Error Code: ${res.status} : ${err.message}`);
 });
 
 
