@@ -38,6 +38,7 @@ app.use((req, res, next) => {
     "Sorry! That page doesn't exist! Please check the correct URL!"
   );
   err.status = 404;
+  res.render('page-not-found', { err });
   next(err);
 });
 /*
@@ -46,6 +47,7 @@ app.use((req, res, next) => {
 app.use((err, req, res) => {
   err.message = err.message || "There was a server error!";
   res.status(err.status || 500);
+  res.render('error', { err });
   console.log(`You have hit a ${err.status} error!`);
   res.send(`Error Code: ${res.status} : ${err.message}`);
 });

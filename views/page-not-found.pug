@@ -1,0 +1,9 @@
+extends layout 
+block content 
+    div.centerIt
+        h1 #{err.message} 
+        h2 #{err.status} 
+        pre #{err.stack}
+        h1 
+            a(href='/') 
+             img.errorImg(src='static/assets/img/error.gif')
