@@ -6,7 +6,6 @@
         "technologies": ["JavaScript"],
         "live_link": "https://rotemas.github.io/RandomQuoteGenerator/",
         "github_link":"https://github.com/RotemAs/RandomQuoteGenerator", 
-        "image_urls": ["static/assets/img/prodj01-nn.png", "static/assets/img/profile-img-n.jpg"]
-    }
-   
+        "image_urls": ["/static/assets/img/prodj01-nn.png"]
+    }   
 ]}
