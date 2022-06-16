@@ -1,0 +1,12 @@
+{"projects": [
+    {
+        "id": 0,
+        "project_name": "RandomQuoteGenerator",
+        "description": "Project one of Treehouse Tech Degree in which quotes are randomly generated.",
+        "technologies": ["JavaScript"],
+        "live_link": "https://rotemas.github.io/RandomQuoteGenerator/",
+        "github_link":"https://github.com/RotemAs/RandomQuoteGenerator", 
+        "image_urls": ["static/assets/img/prodj01-nn.png", "static/assets/img/profile-img-n.jpg"]
+    }
+   
+]}
