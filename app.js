@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const {projects} = require ("./data.json")
+const PORT = '3000'
 
 
 app.use("/static", express.static("public"))
@@ -18,7 +19,6 @@ app.get("/about", (req, res)=>{
 });
 
 app.get("/projects/:id", (req, res, next)=>{
-  // res.render('project', {project:projects[req.params.id]});
   if (parseInt(req.params.id) < projects.length) {
     console.log('==================== if is true ')
     const project = projects[req.params.id];
@@ -36,23 +36,22 @@ app.use((req, res, next) => {
   );
   err.status = 404;
   res.render('page-not-found', { err });
-  next(err);
+  // next(err);
 });
 /*
  * Global Error Handler
  */
-app.use((err, req, res) => {
+app.use((err, req, res,next) => {
   err.message = err.message || "There was a server error!";
   res.status(500);
   res.render('error', { err });
-  // console.log(`You have hit a ${err.status} error!`);
-  // res.send(`Error Code: ${res.status} : ${err.message}`);
 });
 
-
-app.listen(3000, () => {
-    console.log("The app is running at http://localhost:3000/")
+app.listen(PORT, () => {
+    console.log(`The app is running at http://localhost:${PORT}/`)
 
 
 
 });
+
+// ,target="_blank"
