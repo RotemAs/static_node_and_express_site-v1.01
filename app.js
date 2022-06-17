@@ -23,7 +23,7 @@ app.get("/projects/:id", (req, res, next)=>{
     const project = projects[req.params.id];
     res.render("project", { project });
   } 
-    next()
+  
   
 });
 
