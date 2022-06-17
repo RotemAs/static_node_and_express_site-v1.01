@@ -22,7 +22,9 @@ app.get("/projects/:id", (req, res, next)=>{
   if (parseInt(req.params.id) < projects.length) {
     const project = projects[req.params.id];
     res.render("project", { project });
-  } 
+  }  else {
+    next()
+  }
   
   
 });
