@@ -20,11 +20,11 @@ app.get("/about", (req, res)=>{
 
 app.get("/projects/:id", (req, res, next)=>{
   if (parseInt(req.params.id) < projects.length) {
-    console.log('==================== if is true ')
     const project = projects[req.params.id];
     res.render("project", { project });
   } 
-  next()
+    next()
+  
 });
 
 /*
