@@ -1,21 +1,12 @@
 extends layout.pug
 
 block content
-
   article.portfolio-intro
-
-    
     h1 Welcome  
-
-    //- Description of my portfolio, what this project is, it's purpose, what it's supposed to accomplish. 
     p my profile tests for now 
-
-
   article.portfolio-project-thumbs
     .projects-box.box.grid
        each project in projects
-        
-
         .cell
           a(href=`projects/${project.id}`)
             img.thumbnail(src=`${project.image_urls[0]}`, alt=`${project.project_name}`)
