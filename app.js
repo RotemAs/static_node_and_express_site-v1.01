@@ -18,16 +18,13 @@ app.get("/about", (req, res)=>{
 });
 
 app.get("/projects/:id", (req, res, next)=>{
-    res.render('project', {project:projects[req.params.id]});
-    const project = data.projects[id];
-  if (project) {
+  // res.render('project', {project:projects[req.params.id]});
+  if (parseInt(req.params.id) < projects.length) {
+    console.log('==================== if is true ')
+    const project = projects[req.params.id];
     res.render("project", { project });
-  } else {
-    const err = new Error();
-    err.status = 404;
-    err.message = `Project ${id} does not exist`;
-    next(err);
-  }
+  } 
+  next()
 });
 
 /*
