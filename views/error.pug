@@ -1,10 +1,19 @@
-extends layout 
-block content
-    div.centerIt 
-        h1 #{err.message} 
-        h2 #{err.status} 
-        pre #{err.stack}
+extends layout.pug
 
-        h1 
-            a(href='/')
-             img(src="static/assets/img/error.gif")
+block content
+
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
+    div.centerIt
+    h1 #{err.message}
+    h2 #{err.status} 
+    pre #{err.stack}
+    h3  
+     a(href='/')
+        img(src='/static/assets/img/error.gif')
+    nav.nav
+      a(href='/')
+        span &larr;
+        |  Back
