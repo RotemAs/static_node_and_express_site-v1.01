@@ -6,15 +6,12 @@ block content
     a(href='/')
       span &larr;
       |  Back
- div.centerIt
+    .centerIt 
         h1 #{err.message} 
         h2 #{err.status} 
-        h3
-            a(href='/') 
-             img.errorImg(src='static/assets/img/error.gif')
         pre #{err.stack}
-
-
+    a(href='/')
+        img(src='/static/assets/img/error-02.gif')
     nav.nav
       a(href='/')
         span &larr;
