@@ -14,6 +14,7 @@ app.get("/", (req, res)=>{
 
 
 app.get("/about", (req, res)=>{
+  // throw new Error(500)
     res.render('about');
 
 });
@@ -38,6 +39,7 @@ app.use((req, res, next) => {
   );
   err.status = 404;
   res.render('page-not-found', { err });
+  console.log('test100')
   // next(err);
 });
 /*
@@ -45,6 +47,7 @@ app.use((req, res, next) => {
  */
 app.use((err, req, res,next) => {
   err.message = err.message || "There was a server error!";
+  // console.error(err.stack)
   res.status(500);
   res.render('error', { err });
 });
