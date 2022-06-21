@@ -38,18 +38,20 @@ app.use((req, res, next) => {
     "Sorry! That page doesn't exist! Please check the correct URL!"
   );
   err.status = 404;
-  res.render('page-not-found', { err });
-  // console.log('test100')
-  // next(err);
+  next(err);
 });
 /*
  * Global Error Handler
  */
 app.use((err, req, res,next) => {
-  err.message = err.message || "There was a server error!";
-  // console.error(err.stack)
-  res.status(500);
-  res.render('error', { err });
+  if (err.status == 404){
+    res.render('page-not-found', { err })
+  }else{
+    err.message = err.message || "There was a server error!";
+    res.status(500);
+    res.render('error', { err });
+  }
+  console.log(`You have hit a ${err.status} error!`);
 });
 
 app.listen(PORT, () => {
@@ -58,5 +60,3 @@ app.listen(PORT, () => {
 
 
 });
-
-// ,target="_blank"
