@@ -39,7 +39,7 @@ app.use((req, res, next) => {
   );
   err.status = 404;
   res.render('page-not-found', { err });
-  console.log('test100')
+  // console.log('test100')
   // next(err);
 });
 /*
